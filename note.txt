@@ -1,0 +1,79 @@
+Update Your navLinkstoUseSectionIDs
+Changethepathtomatchtheidofeachsection: const navLinks = [
+  { name: "Home", path: "#home" },
+  { name: "Products", path: "#products" },
+  { name: "Contact", path: "#contact" },
+  { name: "About", path: "#about" },
+];
+
+
+
+✅ 2. Wrap Each Section with Matching ids
+In your main page (e.g. App.jsx or wherever the sections are):
+
+<section id="home" className="min-h-screen">Home Content</section>
+<section id="products" className="min-h-screen">Products Content</section>
+<section id="contact" className="min-h-screen">Contact Content</section>
+<section id="about" className="min-h-screen">About Content</section>
+
+
+
+bg-[#22344f] for background
+
+text-For certain data processing activities, we will request your explicit consent. For instance, we may ask for consent to send marketing communications, track your device for fraud protection, or use your contact list for specific purposes.for text color
+
+border-[#22344f] for border color, etc.
+
+
+
+
+
+ <div>
+        {/* Frame 45 - Small screens (portrait) */}
+        <div className="block lg:hidden">
+          <img src={Image1} alt="Vaultify mobile info" />
+        </div>
+
+        {/* Frame 23 - Large screens (landscape) */}
+        <div className="hidden lg:block flex justify-center items-center">
+          <img src={Image2} alt="Vaultify desktop info" />
+        </div>
+      </div>
+
+
+
+      {/* <div className="max-w-7xl mx-auto">
+        <h2>What is Vaultify?</h2>
+        <p>
+          Vaultify is a smart estate management platform that simplifies access
+          control, enhances security, and streamlines administration for safer,
+          smarter living.
+        </p>
+        <div>
+          <div>
+            <div>ICon</div>
+            <h2>Smart Estate Management</h2>
+            <p>
+              Vaultify simplifies estate operations by streamlining access
+              control and enhancing day-to-day communication.
+            </p>
+          </div>
+          <div>
+            <div>Icon</div>
+            <h2>Built for Everyone</h2>
+            <p>
+              Designed for residents, security teams, and estate
+              managers—Vaultify offers user-friendly tools for every
+              stakeholder.
+            </p>
+          </div>
+          <div>
+            <div>icon</div>
+            <h2>Safer, Smarter Living</h2>
+            <p>
+              From secure messaging to emergency alerts, Vaultify promotes a
+              connected and secure living experience.
+            </p>
+          </div>
+        </div>
+      </div> */}

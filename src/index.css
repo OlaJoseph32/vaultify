@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+@theme{
+  /* --breakpoint-*: initial; */
+  --breakpoint-xs: 320px;
+  --breakpoint-xss: 420px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; 
+}
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
